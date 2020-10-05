@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1 class="titulo-pagina">Lista de Contatos</h1>
+<center><a class="botao-verde" href="{% url 'cria_contato' %}">Novo contato</a></center>
+  {% for contato in contatos %}
+    <div class="contato-container">
+      <h1>{{ contato.nome }}</h1>
+      <div class="email-telefone">
+        <p><strong>E-mail: </strong> {{ contato.email }}</p>
+        <p><strong>Telefone: </strong> {{ contato.telefone }}</p>
+        <p><strong>Criado em: </strong> {{ contato.criado }}</p>
+        <form action="{% url 'deleta_contato' contato.id %}" method="POST">
+          {% csrf_token %}
+          <button id="delete-user" type="submit">Excluir</button>
+          <a id="edit-user" href="{% url 'atualiza_contato' contato.id%}">Editar</a>
+          <a id="add-address" href="{% url 'cria_endereco' %}">+ Endereço</a>
+        </form>
+      </div>
+      <div class="enderecos-container">
+        {% for endereco in enderecos %}
+          {% if endereco.contato_id == contato.id %}
+            <div class="endereco">
+              <div class="dados">
+                <p><strong>Logradouro: </strong>{{endereco.logradouro}}</p>
+                <p><strong>Complemento: </strong>{{endereco.complemento}}</p>
+                <div class="cep-cidade-uf">
+                  <p><strong>CEP: </strong>{{endereco.cep}}</p>
+                  <p><strong>Cidade: </strong>{{endereco.localidade}}</p>
+                  <p><strong>UF: </strong>{{endereco.estado}}</p>
+                </div>
+                <p><i>Criado em: {{endereco.criado}}</i></p>
+              </div>
+              <div class="botoes">
+                <form action="{% url 'deleta_endereco' endereco.id %}" method="POST">
+                  {% csrf_token %}
+                  <button id="delete-address" type="submit">Excluir</button>
+                </form>
+                <a id="edit-address" href="{% url 'atualiza_endereco' endereco.id%}">Editar</a>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>  
+    </div>
+  {% endfor %}     
+{% endblock content %}

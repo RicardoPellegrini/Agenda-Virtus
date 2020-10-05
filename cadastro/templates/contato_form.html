@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<h1 class="titulo-pagina">Contato</h1>
+<center><a class="botao-vermelho" href="{% url 'lista_contatos' %}">Voltar à lista</a></center>
+<!-- FORM -->
+<form action="." method="POST" autocomplete="off">
+    {% csrf_token %}
+    {{ contatoForm }}
+    <input class="botao-verde" type="submit" value="Confirmar" />
+</form>
+{% endblock content %}

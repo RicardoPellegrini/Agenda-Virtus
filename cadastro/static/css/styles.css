@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+
+header h1 {
+  line-height: 80px;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+}
+
+.titulo-pagina {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contato-container {
+  background-color: #dde2eb;
+  margin:  auto;
+  margin-bottom: 10px;
+  width: 800px;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.contato-container + .contato-container {
+  margin-top: 10px;
+}
+
+.contato-container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: #000;
+}
+
+.email-telefone {
+  display: flex;
+  padding: 0px 20px;
+  margin: 0px 0px 10px 0px;
+  justify-content: space-between;
+}
+
+.email-telefone p {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.email-telefone form {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.enderecos-container {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.endereco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+
+  background-color: #fff;
+}
+
+.endereco + .endereco {
+  margin-top: 10px;
+}
+
+.dados {
+  width: 70%;
+  text-align: left;
+}
+
+.dados p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.cep-cidade-uf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botoes {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.botoes button,
+.botoes a,
+.email-telefone a,
+.email-telefone button {
+  display: block;
+  text-align: center;
+  align-self: center;
+  font-size: 10px;
+  text-decoration: none;
+  justify-content: center;
+  line-height: 50px;
+  width: 60px;
+  margin-left: 10px;
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  margin-bottom: 15px;
+}
+
+form {
+  display: inline-block;
+  margin: 15px 0px 15px 0px;
+}
+
+form button {
+  display: inline-block;
+}
+
+form label {
+  display: block;
+  text-align: left;
+}
+
+form input {
+  width: 300px;
+  padding: 5px 10px;
+}
+
+.botao-verde {
+  text-decoration: none;
+  background-color: #54c782;
+  margin: 10px auto;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-self: center;
+  width: 150px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.botao-verde:hover {
+  border: none;
+  color: #fff;
+  background-color: #247545;
+}
+
+.botao-vermelho {
+  text-decoration: none;
+  background-color: #e38a8a;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  justify-self: center;
+  width: 120px;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.botao-vermelho:hover {
+  border: none;
+  color: #fff;
+  background-color: #cf6969;
+}
+
+#add-address {
+  background-color: #54c782;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#add-address:hover {
+  background-color: #247545;
+}
+
+#edit {
+  background-color: #54c782;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#edit:hover {
+  background-color: #247545;
+}
+
+#delete-address {
+  background-color: #e38a8a;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#delete-address:hover {
+  background-color: #cf6969;
+}
+
+#delete-address, #delete-user {
+  background-color: #e38a8a;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#delete-address:hover, #delete-user:hover {
+  background-color: #cf6969;
+}
+
+#edit-address, #edit-user {
+  background-color: #8eb5f5;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#edit-address:hover, #edit-user:hover {
+  background-color: #5884cc;
+}
+
+
+
