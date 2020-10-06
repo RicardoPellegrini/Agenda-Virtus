@@ -1,7 +1,7 @@
 # Agenda Virtus
 ---
 
-<h1><img src="public/app.gif"></h1>
+<h1><img src="agenda-virtus.gif"></h1>
 
 ## Sobre
 
