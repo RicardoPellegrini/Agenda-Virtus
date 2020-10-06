@@ -5,7 +5,8 @@
 
 ## Sobre
 
-The **Agenda Virtus** project was reproduced for educational purposes, with the main goal of improving concepts from the React library, HTML/CSS and API connection. For this project, we use the [edaman](https://www.edamam.com/) API, where we can obtain recipes for a particular food.
+No projeto **Agenda Virtus**, foi feita uma agenda em Django onde é possível cadastrar e listar contatos, incluindo seus endereços. Nessa aplicação, é possível adicionar mais de um endereço para cada usuário, e deletar os endereços e usuários que forem necessários. Todos os dados são salvos em banco de dados MySQL, separados em duas tabelas: Contatos e Endereços.
+Ainda nesse projeto, foi utilizada a api do site [viacep](https://viacep.com.br/), que permitiu a que os campos de endereço fossem autopreenchidos através do CEP informado.
 
 ---
 
@@ -13,10 +14,10 @@ The **Agenda Virtus** project was reproduced for educational purposes, with the 
 
 This project was made using the following technologies:
 
+- Python
+- Django
+- HTML e CSS
 - JavaScript
-- React.js
-- React hooks
-- dotenv
-- HTML and CSS
+- Banco de dados MySQL
 - API connection
 ---
