@@ -10,9 +10,9 @@ Ainda nesse projeto, foi utilizada a api do site [viacep](https://viacep.com.br/
 
 ---
 
-## Technologies used
+## Tecnologias utilizadas
 
-This project was made using the following technologies:
+Esse projeto foi feito utilizando as seguintes tecnologias:
 
 - Python
 - Django
