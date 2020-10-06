@@ -19,5 +19,5 @@ Esse projeto foi feito utilizando as seguintes tecnologias:
 - HTML e CSS
 - JavaScript
 - Banco de dados MySQL
-- API connection
+- conexão com API
 ---
